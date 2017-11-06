@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <div class="page-wrapper">
+  <div class="page-wrapper"> <!-- Обертка страницы(grid)-->
 
     <header class="main-header">
       <a href="#" class="logo"><img src="#" alt="Sedona Logo"></a>
@@ -33,7 +33,7 @@
       </nav>
     </header>
 
-    <div class="page-content">
+    <div class="page-content"> <!-- Обертка контента страницы-->
 
       <div class="intro">
         <img src="#" class="welcome" alt="welcome" width="256" height="86">
@@ -105,18 +105,33 @@
 
       </section>
 
-      <section class="reserve">
+      <section class="reserve" aria-label="Резервирование мест">
         <div class="reserve-head">
           <h1>Заинтересовались?</h1>
           <h2>Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем Вам лучшие предложения гостиниц в&nbsp;Седоне</h2>
         </div>
-        <!-- Элементы формы, форма -- >
+        <!--Элементы формы, форма-->
       </section>
 
-      <div class="map"></div>
-    </div>
-  </div>
+      <div class="map" aria-label="Местоположение гостиницы на карте"></div> <!-- Карта-->
 
+      <footer class="main-footer">
+        <a href="#" class="footer-link">#visitsedona</a>
+        <div class="footer-social">
+          <a href="#" class="social tw">Twitter</a>
+          <a href="#" class="social fb">Facebook</a>
+          <a href="#" class="social ytb">YouTube</a>
+        </div>
+        <div class="footer-copyright">
+          <p>Website by
+            <a href="#" class="by"></a>
+          </p>
+        </div>
+      </footer>
+
+    </div> <!--Закрываем обертку контента-->
+
+  </div> <!-- Закрываем обертку страницы(grid)-->
 
 </body>
 </html>
