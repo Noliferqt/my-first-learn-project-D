@@ -110,7 +110,30 @@
           <h1>Заинтересовались?</h1>
           <h2>Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем Вам лучшие предложения гостиниц в&nbsp;Седоне</h2>
         </div>
-        <!--Элементы формы, форма-->
+
+        <div class="modal-window">
+
+          <form class="search-form" action="echo" method="post">
+            <label class="coming-day" for="coming">Дата заезда</label>
+            <input class="day" type="text" name="coming" id="coming" placeholder="24 Апреля 2017" required>
+            <label class="leave-day" for="leave">Дата выезда</label>
+            <input class="day" type="text" name="leave" id="leave" placeholder="4 Июля 2017" required>
+            <label class="growned-amount" for="growned">Взрослые:</label>
+            <div class="amount-field">
+              <a href="#" class="up"></a>
+              <input class="amount" type="text" name="growned" id="growned" placeholder="2" required>
+              <a href="#" class="down"></a>
+            </div>
+            <label class="children-amount" for="children">Дети:</label>
+            <div class="amount-field">
+              <a href="#" class="up"></a>
+              <input class="amount" type="text" name="children" id="children" placeholder="0" required>
+              <a href="#" class="down"></a>
+            </div>
+            <a href="#" class="button button-blue">Найти</a>
+          </form>
+
+        </div>
       </section>
 
       <div class="map" aria-label="Местоположение гостиницы на карте"></div> <!-- Карта-->
