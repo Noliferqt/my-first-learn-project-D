@@ -113,24 +113,24 @@
 
         <div class="modal-window">
 
-          <form class="search-form" action="echo" method="post">
-            <label class="coming-day" for="coming">Дата заезда</label>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="coming-day" for="coming">Дата заезда <span class="calendar-icon"></span></label>
             <input class="day" type="text" name="coming" id="coming" placeholder="24 Апреля 2017" required>
-            <label class="leave-day" for="leave">Дата выезда</label>
+            <label class="leave-day" for="leave">Дата выезда <span class="calendar-icon"></span></label>
             <input class="day" type="text" name="leave" id="leave" placeholder="4 Июля 2017" required>
             <label class="growned-amount" for="growned">Взрослые:</label>
             <div class="amount-field">
-              <a href="#" class="up"></a>
-              <input class="amount" type="text" name="growned" id="growned" placeholder="2" required>
-              <a href="#" class="down"></a>
+              <button aria-label="уменьшить количество человек">&minus;</button>
+              <input class="amount" type="number" min="1" max="10" name="growned" id="growned" placeholder="2" required>
+              <button aria-label="увеличить количество человек">&plus;</button>
             </div>
             <label class="children-amount" for="children">Дети:</label>
             <div class="amount-field">
-              <a href="#" class="up"></a>
-              <input class="amount" type="text" name="children" id="children" placeholder="0" required>
-              <a href="#" class="down"></a>
+              <button aria-label="уменьшить количество человек">&minus;</button>
+              <input class="amount" type="number" min="0" max="10" name="children" id="children" placeholder="0" required>
+              <button aria-label="увеличить количество человек">&plus;</button>
             </div>
-            <a href="#" class="button button-blue">Найти</a>
+            <button type="submit" class="button-show">Найти</button>
           </form>
 
         </div>
