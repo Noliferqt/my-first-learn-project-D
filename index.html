@@ -2,9 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="keywords" content="Седона,Аризона,Гостиница,Достопримечательности">
+  <meta name="description" content="Седона,Аризона,Гостиница,Достопримечательности">
 
   <title>Седона</title>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" >
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
 
 </head>
 <body>
@@ -12,7 +18,7 @@
   <div class="page-wrapper"> <!-- Обертка страницы(grid)-->
 
     <header class="main-header">
-      <a href="#" class="logo"><img src="img/logo.png" width="138" height="70" alt="Sedona Logo"></a>
+      <a href="hotels.html" class="logo"><img src="img/logo.png" width="138" height="70" alt="Sedona Logo"></a>
       <nav class="site-navigation">
         <ul class="left-nav">
           <li>
@@ -107,7 +113,7 @@
 
       <section class="reserve" aria-label="Резервирование мест">
         <div class="reserve-head">
-          <h1>Заинтересовались?</h1>
+          <div class="reserve-title">Заинтересовались?</div>
           <h2>Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем Вам лучшие предложения гостиниц в&nbsp;Седоне</h2>
         </div>
 
@@ -120,15 +126,15 @@
             <input class="day" type="text" name="leave" id="leave" placeholder="4 Июля 2017" required>
             <label class="growned-amount" for="growned">Взрослые:</label>
             <div class="amount-field">
-              <button aria-label="уменьшить количество человек">&minus;</button>
+              <button class="amount-down" aria-label="уменьшить количество человек">&minus;</button>
               <input class="amount" type="number" min="1" max="10" name="growned" id="growned" placeholder="2" required>
-              <button aria-label="увеличить количество человек">&plus;</button>
+              <button class="amount-up" aria-label="увеличить количество человек">&plus;</button>
             </div>
             <label class="children-amount" for="children">Дети:</label>
             <div class="amount-field">
-              <button aria-label="уменьшить количество человек">&minus;</button>
+              <button class="amount-down" aria-label="уменьшить количество человек">&minus;</button>
               <input class="amount" type="number" min="0" max="10" name="children" id="children" placeholder="0" required>
-              <button aria-label="увеличить количество человек">&plus;</button>
+              <button class="amount-up" aria-label="увеличить количество человек">&plus;</button>
             </div>
             <button type="submit" class="button-show">Найти</button>
           </form>
