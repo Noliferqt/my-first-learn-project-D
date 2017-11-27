@@ -41,7 +41,7 @@
     <main class="page-content"> <!-- Обертка контента страницы-->
 
       <div class="search" aria-label="Параметры поиска гостиниц">
-        <form class="search-form-hotels" action="https://echo.htmlacademy.ru" mehod="post">
+        <form class="search-form-hotels" action="https://echo.htmlacademy.ru" method="post">
 
           <div class="search-list">
             <h4>Инфраструктура</h4>
@@ -65,15 +65,15 @@
             <h4>Тип жилья:</h4>
             <ul>
               <li>
-                <input type="checkbox" name="hotel" id="hotel">
+                <input type="checkbox" name="hotel" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="motel" id="motel">
+                <input type="checkbox" name="motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="apartments" id="apartments">
+                <input type="checkbox" name="apartments" id="apartments" disabled>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
@@ -82,13 +82,15 @@
           <div class="filters">
             <h4>Стоимость в сутки (Р):</h4>
             <div class="price-filter">
-              от <input class="min-value" type="text" value="0">
-              до <input class="max-value" type="text" value="3000">
+              <label class="min-value" for="min-value">от <input name="min-value" type="text" id="min-value" value="0"></label>
+              <label class="max-value" for="max-value">до <input name="max-value" type="text" id="max-value" value="3000"></label>
             </div>
             <div class="price-dots">
-              <div class="full-line"><div class="active-line"></div></div>
-              <div class="dot-min"></div>
-              <div class="dot-max"></div>
+              <div class="full-line">
+                <div class="active-line"></div>
+              </div>
+              <div class="dot dot-min"></div>
+              <div class="dot dot-max"></div>
             </div>
             <button type="submit" class="button-show">Показать</button>
           </div>
@@ -104,8 +106,18 @@
             <a href="#" class="sort-active">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По рейтингу</a>
-            <a href="#" class="arrow arrow-top arrow-active"></a>
-            <a href="#" class="arrow arrow-down "></a>
+          </div>
+          <div class="arrows">
+            <a href="#" class="arrow arrow-top">
+              <svg width="11" height="10" viewBox="0 0 11 10">
+                <path  d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a>
+            <a href="#" class="arrow arrow-down arrow-active">
+              <svg width="11" height="10" viewBox="0 0 11 10">
+                <path d="M5.5 10L0 0h11"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -122,7 +134,21 @@
               <a href="#" class="button button-blue">Подробнее</a>
               <a href="#" class="button button-brown">Забронировать</a>
             </div>
-            <div class="hotel-rate">Рейтинг: 8,5</div>
+            <div class="hotel-stars">
+              <svg width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <svg width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <svg width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <svg width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <div class="hotel-rate">Рейтинг: 8,5</div>
+            </div>
           </article>
 
           <article class="hotel desert">
@@ -136,7 +162,18 @@
               <a href="#" class="button button-blue">Подробнее</a>
               <a href="#" class="button button-brown">Забронировать</a>
             </div>
-            <div class="hotel-rate">Рейтинг: 8,9</div>
+            <div class="hotel-stars">
+              <svg width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <svg width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <svg width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <div class="hotel-rate">Рейтинг: 8,9</div>
+            </div>
           </article>
 
           <article class="hotel diablo">
@@ -150,7 +187,16 @@
               <a href="#" class="button button-blue">Подробнее</a>
               <a href="#" class="button button-brown">Забронировать</a>
             </div>
-            <div class="hotel-rate">Рейтинг: 9,2</div>
+            <div class="hotel-stars">
+              <svg  width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <svg width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+              </svg>
+              <div class="hotel-rate">Рейтинг: 9,2</div>
+            </div>
+
           </article>
 
         </div>
