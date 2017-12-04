@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body class="isnohome">
 
   <div class="page-wrapper"> <!-- Обертка страницы(grid)-->
 
@@ -21,7 +21,7 @@
       <nav class="site-navigation">
         <ul class="left-nav">
           <li>
-            <a href="#">Информация</a>
+            <a href="index.html">Информация</a>
           </li>
           <li>
             <a href="#">Фото и видео</a>
@@ -41,6 +41,7 @@
     <main class="page-content"> <!-- Обертка контента страницы-->
 
       <div class="search" aria-label="Параметры поиска гостиниц">
+
         <form class="search-form-hotels" action="https://echo.htmlacademy.ru" method="post">
 
           <div class="search-list">
@@ -96,6 +97,7 @@
           </div>
 
         </form>
+
       </div>
 
       <section class="search-results" aria-label="Результаты поиска гостиниц">
@@ -123,7 +125,7 @@
 
         <div class="hotels-list">
 
-          <article class="hotel amara">
+          <div class="hotel amara">
             <div class="hotel-bg"><img src="img/amara.jpg" width="135" height="90" alt="Amara Resort and Spa"></div>
             <div class="hotel-description">
               <a href="#" class="title">Amara Resort &amp;&nbsp;Spa</a>
@@ -149,9 +151,9 @@
               </svg>
               <div class="hotel-rate">Рейтинг: 8,5</div>
             </div>
-          </article>
+          </div>
 
-          <article class="hotel desert">
+          <div class="hotel desert">
             <div class="hotel-bg"><img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn"></div>
             <div class="hotel-description">
               <a href="#" class="title">Desert Quail Inn</a>
@@ -174,9 +176,9 @@
               </svg>
               <div class="hotel-rate">Рейтинг: 8,9</div>
             </div>
-          </article>
+          </div>
 
-          <article class="hotel diablo">
+          <div class="hotel diablo">
             <div class="hotel-bg"><img src="img/diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo"></div>
             <div class="hotel-description">
               <a href="#" class="title">Villas at Poco Diablo</a>
@@ -197,7 +199,7 @@
               <div class="hotel-rate">Рейтинг: 9,2</div>
             </div>
 
-          </article>
+          </div>
 
         </div>
 
@@ -206,7 +208,9 @@
     </main>  <!--Закрываем обертку контента-->
 
     <footer class="main-footer">
+
       <a href="#" class="footer-link">#visitsedona</a>
+
       <div class="footer-social">
         <a href="#" class="social tw">
           <svg viewBox="0 0 17 15" width="17" height="15">
@@ -227,6 +231,7 @@
           </svg>
         </a>
       </div>
+
       <div class="footer-copyright">
         <p>Website by
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="by">
@@ -237,6 +242,7 @@
           </a>
         </p>
       </div>
+
     </footer>
 
   </div>  <!-- Закрываем обертку страницы(grid)-->
