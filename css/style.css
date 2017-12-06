@@ -124,6 +124,9 @@ a {
   display: block;
   margin: 0 auto 52px;
 }
+.intro .sucks {
+  margin-bottom: 0;
+}
 .advantages{
   padding-top: 60px;
   text-align: center;
@@ -202,7 +205,7 @@ a {
   text-align: center;
 }
 .icon-content {
-  padding: 158px 12% 16%;
+  padding: 162px 12% 15%;
 }
 .advantage-icon-title {
   font-size: 21px;
@@ -230,6 +233,7 @@ a {
 }
 .bonuses .advantage-icon-title::after{
   background: url("../img/svg/souvenir-icon.svg") no-repeat;
+  left: 51%;
 }
 .advantages-list.gray-theme {
   background: #eeeeee;
@@ -569,11 +573,10 @@ input::-webkit-inner-spin-button {
   height: 48px;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 4px;
+  margin-left: 2px;
   background: #81B3D2;
   line-height: 48px;
   color: #ffffff;
-
 }
 .social:hover {
   background-color: #669EC0;
@@ -606,7 +609,7 @@ input::-webkit-inner-spin-button {
 }
 /*Custom styles for inner page*/
 .search {
-  padding: 30px 0;
+  padding: 27px 0 32px;
   background: url("../img/hotel-bg.jpg") no-repeat center #375866;
   background-size: cover;
   color: #fff;
@@ -632,7 +635,7 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
 }
 .filters h4{
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 .search-list h4 {
   margin-bottom: 26px;
@@ -754,12 +757,13 @@ input::-webkit-inner-spin-button {
 }
 .filters .button-show {
   display: block;
-  margin: 0 auto;
-  padding: 5px 25px;
+  margin: 0 26%;
+  padding: 5px 11%;
   line-height: 21px;
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
@@ -795,13 +799,15 @@ input::-webkit-inner-spin-button {
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-size: 12px;
+  font-weight: normal;
   color: #000000;
   line-height: 18px;
 }
 .all-results a {
-  margin-left: 30px;
+  margin-left: 34px;
   border-bottom: 1px dotted #81B3D2;
   color: #CACACA;
+  margin-bottom: 2px;
 }
 .all-results a:first-child {
   margin-left: 36px;
@@ -927,8 +933,8 @@ input::-webkit-inner-spin-button {
 .hotels-list .button {
   display: inline-block;
   vertical-align: middle;
-  padding: 4px 17px;
-  margin: 10px 5px 0 0;
+  padding: 3px 17px;
+  margin: 12px 2px 0 0;
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
@@ -942,8 +948,8 @@ input::-webkit-inner-spin-button {
 }
 .hotel-rate {
   display: block;
-  margin-top: 44px;
-  padding: 4px 14px;
+  margin-top: 46px;
+  padding: 3px 14px;
   background: #f2f2f2;
   color: #666666;
   font-weight: normal;
