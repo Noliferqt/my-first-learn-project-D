@@ -9,7 +9,7 @@ var popup         = document.querySelector(".modal-window"),
     growned       = popup.querySelector("[name= growned]"),
     children      = popup.querySelector("[name= children]");
 
-reserve.removeAttribute("checked");
+popup.classList.remove("show");
 
 openClose.addEventListener("click", function (evt) {
   evt.preventDefault();
